@@ -21,13 +21,17 @@ namespace GHelperXboxBar
                 return;
             }
 
-            var protocolArgs = (IProtocolActivatedEventArgs)args;
-            if (!XboxGameBarWidgetActivatedEventArgs.IsValid(protocolArgs))
+            var protocolArgs = args as IProtocolActivatedEventArgs;
+            if (protocolArgs == null || !protocolArgs.Uri.Scheme.StartsWith("ms-gamebarwidget"))
             {
                 return;
             }
 
-            var widgetArgs = new XboxGameBarWidgetActivatedEventArgs(protocolArgs);
+            if (args is not XboxGameBarWidgetActivatedEventArgs widgetArgs)
+            {
+                return;
+            }
+
             if (!widgetArgs.IsLaunchActivation)
             {
                 return;

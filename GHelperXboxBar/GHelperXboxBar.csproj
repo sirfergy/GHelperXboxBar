@@ -91,6 +91,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <SDKReference Include="WindowsDesktop, Version=10.0.19041.0">
+      <Name>Windows Desktop Extensions for the UWP</Name>
+    </SDKReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Gaming.XboxGameBar">
       <Version>1.2.1</Version>
     </PackageReference>
