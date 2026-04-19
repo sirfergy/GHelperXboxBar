@@ -92,6 +92,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <AppxManifest Include="..\GHelperXboxBar.Package\Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+
+  <ItemGroup>
     <SDKReference Include="WindowsDesktop, Version=10.0.19041.0">
       <Name>Windows Desktop Extensions for the UWP</Name>
     </SDKReference>
