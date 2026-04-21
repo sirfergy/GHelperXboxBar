@@ -42,6 +42,12 @@ GHelperXboxBar.sln
                               both, declares the Xbox Game Bar widget
                               extension and the windows.fullTrustProcess
                               extension.
+    └── Public/               REQUIRED empty-ish folder referenced by the
+                              widget AppExtension's PublicFolder attribute.
+                              If this folder is missing from the produced
+                              MSIX, Windows silently drops the AppExtension
+                              registration and the widget never appears in
+                              the Game Bar widget menu.
 ```
 
 The UWP widget stores the requested profile index in `ApplicationData.LocalSettings`

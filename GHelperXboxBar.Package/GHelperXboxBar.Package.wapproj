@@ -30,6 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\**\*" />
+    <Content Include="Public\**\*" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GHelperXboxBar\GHelperXboxBar.csproj">

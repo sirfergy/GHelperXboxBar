@@ -7,7 +7,8 @@
   xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
-  IgnorableNamespaces="uap uap3 uap5 mp rescap desktop">
+  xmlns:xbgbw="http://schemas.microsoft.com/appx/manifest/xboxgamebarwidget/windows10"
+  IgnorableNamespaces="uap uap3 uap5 mp rescap desktop xbgbw">
 
   <Identity
     Name="GHelperXboxBar"
@@ -57,28 +58,27 @@
             DisplayName="G-Helper Profiles"
             Description="Switch G-Helper performance profiles (Silent, Balanced, Turbo, Custom, XGM) without leaving your game.">
             <uap3:Properties>
-              <XboxGameBarWidget
-                xmlns="http://schemas.microsoft.com/appx/manifest/xboxgamebarwidget/windows10">
-                <DisplayName>G-Helper Profiles</DisplayName>
-                <Description>Switch G-Helper performance profiles from Game Bar.</Description>
-                <Tags>G-Helper;ASUS;ROG;Performance;Profiles</Tags>
-                <SupportedViewSizes>
-                  <ViewSize>Default</ViewSize>
-                  <ViewSize>Narrow</ViewSize>
-                </SupportedViewSizes>
-                <DefaultView>
-                  <Width>240</Width>
-                  <MinHeight>260</MinHeight>
-                  <MaxHeight>420</MaxHeight>
-                  <Resizable>true</Resizable>
-                </DefaultView>
-                <NarrowView>
-                  <Width>180</Width>
-                  <MinHeight>260</MinHeight>
-                  <MaxHeight>420</MaxHeight>
-                  <Resizable>true</Resizable>
-                </NarrowView>
-              </XboxGameBarWidget>
+              <xbgbw:XboxGameBarWidget>
+                <xbgbw:DisplayName>G-Helper Profiles</xbgbw:DisplayName>
+                <xbgbw:Description>Switch G-Helper performance profiles from Game Bar.</xbgbw:Description>
+                <xbgbw:Tags>G-Helper;ASUS;ROG;Performance;Profiles</xbgbw:Tags>
+                <xbgbw:SupportedViewSizes>
+                  <xbgbw:ViewSize>Default</xbgbw:ViewSize>
+                  <xbgbw:ViewSize>Narrow</xbgbw:ViewSize>
+                </xbgbw:SupportedViewSizes>
+                <xbgbw:DefaultView>
+                  <xbgbw:Width>240</xbgbw:Width>
+                  <xbgbw:MinHeight>260</xbgbw:MinHeight>
+                  <xbgbw:MaxHeight>420</xbgbw:MaxHeight>
+                  <xbgbw:Resizable>true</xbgbw:Resizable>
+                </xbgbw:DefaultView>
+                <xbgbw:NarrowView>
+                  <xbgbw:Width>180</xbgbw:Width>
+                  <xbgbw:MinHeight>260</xbgbw:MinHeight>
+                  <xbgbw:MaxHeight>420</xbgbw:MaxHeight>
+                  <xbgbw:Resizable>true</xbgbw:Resizable>
+                </xbgbw:NarrowView>
+              </xbgbw:XboxGameBarWidget>
             </uap3:Properties>
           </uap3:AppExtension>
         </uap3:Extension>
