@@ -8,7 +8,7 @@
     Background="Transparent">
 
     <Grid Padding="6,2"
-          HorizontalAlignment="Center"
+          HorizontalAlignment="Right"
           VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
